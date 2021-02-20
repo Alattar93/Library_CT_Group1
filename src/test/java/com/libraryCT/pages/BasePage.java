@@ -1,5 +1,6 @@
 package com.libraryCT.pages;
 
+import com.libraryCT.utilites.BrowserUtils;
 import com.libraryCT.utilites.ConfigurationReader;
 import com.libraryCT.utilites.Driver;
 import org.openqa.selenium.WebElement;
@@ -23,19 +24,25 @@ public abstract class BasePage {
 
 
     public void studentLogin() {
+
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         String studentEmail = ConfigurationReader.getProperty("student133Email");
         String studentPass = ConfigurationReader.getProperty("student133Pass");
         emailAddress.sendKeys(studentEmail);
         password.sendKeys(studentPass);
+        BrowserUtils.sleep(1);
         signInButton.clear();
 
     }
 
     public void librarianLogin() {
+
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         String librarianEmail = ConfigurationReader.getProperty("librarianEmail");
         String librarianPass = ConfigurationReader.getProperty("OPhunod4");
         emailAddress.sendKeys(librarianEmail);
         password.sendKeys(librarianPass);
+        BrowserUtils.sleep(1);
         signInButton.clear();
 
     }
