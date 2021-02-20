@@ -43,7 +43,7 @@ public abstract class BasePage {
         emailAddress.sendKeys(librarianEmail);
         password.sendKeys(librarianPass);
         BrowserUtils.sleep(1);
-        signInButton.clear();
+        signInButton.click();
 
     }
 }
