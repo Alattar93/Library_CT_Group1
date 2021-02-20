@@ -39,7 +39,7 @@ public abstract class BasePage {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         String librarianEmail = ConfigurationReader.getProperty("librarianEmail");
-        String librarianPass = ConfigurationReader.getProperty("OPhunod4");
+        String librarianPass = ConfigurationReader.getProperty("librarianPass");
         emailAddress.sendKeys(librarianEmail);
         password.sendKeys(librarianPass);
         BrowserUtils.sleep(1);
