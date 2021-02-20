@@ -31,7 +31,7 @@ public abstract class BasePage {
         emailAddress.sendKeys(studentEmail);
         password.sendKeys(studentPass);
         BrowserUtils.sleep(1);
-        signInButton.clear();
+        signInButton.click();
 
     }
 
