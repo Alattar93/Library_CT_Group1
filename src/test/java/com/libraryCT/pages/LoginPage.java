@@ -11,13 +11,10 @@ import org.openqa.selenium.support.PageFactory;
 public  class LoginPage extends BasePage{
     // Hello Group 1public LoginPage() {
 
-
-public class LoginPage {
-
     // Hello Group 1
     public LoginPage() {
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
 
@@ -31,9 +28,6 @@ public class LoginPage {
     public WebElement signInButton;
 
 
-
-
-
     String librarianEmail = ConfigurationReader.getProperty("librarianEmail");
     String librarianPass = ConfigurationReader.getProperty("librarianPass");
 
@@ -41,7 +35,7 @@ public class LoginPage {
     String studentPass = ConfigurationReader.getProperty("student133Pass");
 
     public void studentLogin() {
-      
+
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         emailAddress.sendKeys(studentEmail);
         password.sendKeys(studentPass);
