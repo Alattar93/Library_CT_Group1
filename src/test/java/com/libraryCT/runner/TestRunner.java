@@ -1,5 +1,6 @@
 package com.libraryCT.runner;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -10,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/libraryCT/step_definitions",
         dryRun = false,
-        tags = "@m"
+        tags = "@123"
 )
 
 public class TestRunner {
