@@ -12,6 +12,15 @@ public  class LoginPage extends BasePage{
     // Hello Group 1public LoginPage() {
 
 
+public class LoginPage {
+
+    // Hello Group 1
+    public LoginPage() {
+
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+
     @FindBy(id = "inputEmail")
     public WebElement emailAddress;
 
@@ -32,6 +41,7 @@ public  class LoginPage extends BasePage{
     String studentPass = ConfigurationReader.getProperty("student133Pass");
 
     public void studentLogin() {
+      
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         emailAddress.sendKeys(studentEmail);
         password.sendKeys(studentPass);
