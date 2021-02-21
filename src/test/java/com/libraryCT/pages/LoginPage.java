@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public abstract class BasePage {
+public abstract class LoginPage {
 
-    public BasePage() {
+    public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
