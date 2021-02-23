@@ -25,7 +25,7 @@ public  class LoginPage {
 
     public void studentLogin() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+
         String studentEmail = ConfigurationReader.getProperty("student133Email");
         String studentPass = ConfigurationReader.getProperty("student133Pass");
         emailAddress.sendKeys(studentEmail);
@@ -37,7 +37,7 @@ public  class LoginPage {
 
     public void librarianLogin() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+
         String librarianEmail = ConfigurationReader.getProperty("librarianEmail");
         String librarianPass = ConfigurationReader.getProperty("librarianPass");
         emailAddress.sendKeys(librarianEmail);

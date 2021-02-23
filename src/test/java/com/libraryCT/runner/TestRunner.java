@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/libraryCT/step_definitions",
         dryRun = false,
-        tags = "@m"
+        tags = "@ShowRecords"
 )
 
 public class TestRunner {
