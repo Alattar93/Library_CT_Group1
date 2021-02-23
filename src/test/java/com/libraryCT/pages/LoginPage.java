@@ -9,13 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public  class LoginPage extends BasePage{
-    // Hello Group 1public LoginPage() {
-
-    // Hello Group 1
-    public LoginPage() {
-
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
 
     @FindBy(id = "inputEmail")
@@ -33,6 +26,8 @@ public  class LoginPage extends BasePage{
 
     String studentEmail = ConfigurationReader.getProperty("student133Email");
     String studentPass = ConfigurationReader.getProperty("student133Pass");
+
+    public String url=ConfigurationReader.getProperty("LibraryUrl");
 
     public void studentLogin() {
 
