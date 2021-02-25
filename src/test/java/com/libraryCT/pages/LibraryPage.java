@@ -50,6 +50,17 @@ public class LibraryPage extends LoginPage {
     @FindBy(xpath = "//tbody//td//a")
     public List<WebElement> allEditUserButton;
 
+    @FindBy(xpath="//span[.='Users']")     // or linkText = "Users"
+    public WebElement usersPageLink;
+
+    @FindBy(linkText = "Dashboard")               // or //span[@class='title']
+    public WebElement dashboardPageLink;
+
+    @FindBy(linkText = "Books")
+    public WebElement booksPageLink;
+
+
+
 
     public void logOut() {
         logOutDropDown.click();
