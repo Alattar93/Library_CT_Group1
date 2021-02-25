@@ -9,15 +9,12 @@ import java.util.List;
 public class BrowserUtils {
 
     public static List<String> getElementsText(List<WebElement> webElementList){
-
         //Placeholder empty list of web element
         List<String> webElementsAsString = new ArrayList<>();
-
         //Looping through list of web elements and storing text into placeholder list
         for (WebElement each : webElementList) {
             webElementsAsString.add(each.getText());
         }
-
         //returning final List<String>
         return webElementsAsString;
     }

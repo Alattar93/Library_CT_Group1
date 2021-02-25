@@ -3,6 +3,7 @@ package com.libraryCT.pages;
 import com.libraryCT.utilites.BrowserUtils;
 import com.libraryCT.utilites.ConfigurationReader;
 import com.libraryCT.utilites.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,11 +28,11 @@ public  class LoginPage extends BasePage{
     String studentEmail = ConfigurationReader.getProperty("student133Email");
     String studentPass = ConfigurationReader.getProperty("student133Pass");
 
-    public String url=ConfigurationReader.getProperty("LibraryUrl");
+    public String url=ConfigurationReader.getProperty("url");
 
     public void studentLogin() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        Driver.getDriver().get(url);
         emailAddress.sendKeys(studentEmail);
         password.sendKeys(studentPass);
         BrowserUtils.sleep(1);
@@ -41,7 +42,7 @@ public  class LoginPage extends BasePage{
 
     public void librarianLogin() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        Driver.getDriver().get(url);
         emailAddress.sendKeys(librarianEmail);
         password.sendKeys(librarianPass);
         BrowserUtils.sleep(1);
@@ -54,19 +55,25 @@ public  class LoginPage extends BasePage{
         switch (role) {
 
             case "librarian":
-                Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+                Driver.getDriver().get(url);
                 System.out.println("I log in as a Librarian.");
                 emailAddress.sendKeys(librarianEmail);
                 password.sendKeys(librarianPass, Keys.ENTER);
                 break;
 
             case "student":
-                Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+                Driver.getDriver().get(url);
                 System.out.println("I log in as a Student.");
                 emailAddress.sendKeys(studentEmail);
                 password.sendKeys(studentPass, Keys.ENTER);
                 break;
 
         }
+    }
+
+    public void verifyTitle(String expectedTitle){
+        String actualTitle= Driver.getDriver().getTitle();
+        Assert.assertTrue(actualTitle+"is not same with"+expectedTitle,actualTitle.equals(expectedTitle));
+
     }
 }

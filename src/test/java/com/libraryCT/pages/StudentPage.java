@@ -1,11 +1,15 @@
 package com.libraryCT.pages;
 
+import com.libraryCT.utilites.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class StudentPage extends BasePage{
+public class StudentPage extends LoginPage {
+
 
     @FindBy(xpath = "//ul[@id='menu_item']//li")
     public List<WebElement> links;
@@ -14,14 +18,18 @@ public class StudentPage extends BasePage{
     public WebElement logOutDropDown;
 
 
+
     @FindBy(linkText = "Log Out")
     public WebElement logOutLink;
 
-    public void logOut(){
+    public void logOut() {
         logOutDropDown.click();
         logOutLink.click();
     }
-}
+
+
+    }
+
 
 
 
