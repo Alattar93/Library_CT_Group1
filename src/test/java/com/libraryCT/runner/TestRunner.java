@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "com/libraryCT/step_definitions",
-        dryRun =false,
-        tags = "@wip"
+        dryRun = false,
+        tags = "@TC05"
 
    
 )

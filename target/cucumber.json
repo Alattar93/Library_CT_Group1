@@ -1,118 +1,147 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-25T22:45:11.163Z",
-        "line": 10,
-        "name": "Login as different roles and assert the title",
+        "start_timestamp": "2021-02-25T22:02:38.120Z",
+        "line": 4,
+        "name": "Verify default values in users page",
         "description": "",
-        "id": "login-to-app;login-as-different-roles-and-assert-the-title;;2",
+        "id": "show-records-functionality;verify-default-values-in-users-page",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4868000000,
+              "duration": 4025000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user login as a \"student\"",
+            "name": "I am on the login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"student\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.Login_step_definitions.the_user_login_as_a(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_am_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1929000000,
+              "duration": 1704000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user on  \"books\"",
+            "name": "I login as librarian",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"books\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.Login_step_definitions.the_user_on(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_login_as_librarian()"
             },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T22:45:18.064Z",
-        "line": 11,
-        "name": "Login as different roles and assert the title",
-        "description": "",
-        "id": "login-to-app;login-as-different-roles-and-assert-the-title;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3649000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user login as a \"librarian\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"librarian\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.Login_step_definitions.the_user_login_as_a(java.lang.String)"
-            },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain \"Dashboard\". Current url: \"http://library1.cybertekschool.com/#dashboard\" (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mohameds-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1444:a853:a72:a3c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.192, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/gr/rx4dj6v976x...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5f8514e52ba6f3d57d501b892da5bf59\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.libraryCT.pages.BasePage.currentUrl(BasePage.java:27)\n\tat com.libraryCT.step_definitions.Login_step_definitions.the_user_on(Login_step_definitions.java:24)\n\tat ✽.the user on  \"Dashboard\"(file:///Users/moealattar/Desktop/Library_CT_Group1/src/test/resources/features/Login.feature:6)\n",
-              "duration": 10407000000,
-              "status": "failed"
+              "duration": 1668000000,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "the user on  \"Dashboard\"",
+            "line": 7,
+            "name": "I click \"users\" link",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Dashboard\"",
-                  "offset": 13
+                  "val": "\"users\"",
+                  "offset": 8
                 }
               ],
-              "location": "com.libraryCT.step_definitions.Login_step_definitions.the_user_on(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_click_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 420000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "show records default value should be 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 37
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.show_records_default_value_should_be(java.lang.Integer)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 403000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "show records should have following options",
+            "match": {
+              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.show_records_should_have_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "15"
+                ]
+              },
+              {
+                "cells": [
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "500"
+                ]
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@TC05"
           }
         ]
       }
     ],
-    "name": "Login to app",
+    "name": "Show records functionality",
     "description": "",
-    "id": "login-to-app",
+    "id": "show-records-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/TC05.feature",
+    "tags": [
+      {
+        "name": "@TC05",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

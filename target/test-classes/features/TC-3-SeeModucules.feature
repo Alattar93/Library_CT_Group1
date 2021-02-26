@@ -1,4 +1,4 @@
-@all
+
 Feature: User able to see several modules
   As a user ,I should able to see several modules
 

@@ -1,5 +1,5 @@
+@TC05
 Feature: Show records functionality
-
 
   Scenario: Verify default values in users page
     Given I am on the login page
