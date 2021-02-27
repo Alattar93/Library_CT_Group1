@@ -3,139 +3,120 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-25T22:02:38.120Z",
+        "start_timestamp": "2021-02-27T18:04:36.152Z",
         "line": 4,
-        "name": "Verify default values in users page",
+        "name": "verify user status",
         "description": "",
-        "id": "show-records-functionality;verify-default-values-in-users-page",
+        "id": "10.-user-status-feature;verify-user-status",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4025000000,
+              "duration": 4672000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I am on the login page",
             "match": {
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_am_on_the_login_page()"
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.i_am_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1704000000,
+              "duration": 625000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I login as librarian",
+            "line": 7,
+            "name": "User login as a \"librarian\"",
             "match": {
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_login_as_librarian()"
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1668000000,
+              "duration": 1793000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I click \"users\" link",
+            "line": 8,
+            "name": "User is on \"Users\" module",
             "match": {
               "arguments": [
                 {
-                  "val": "\"users\"",
-                  "offset": 8
+                  "val": "\"Users\"",
+                  "offset": 11
                 }
               ],
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_click_link(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 420000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "show records default value should be 10",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 37
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.show_records_default_value_should_be(java.lang.Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 403000000,
+              "duration": 700000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "show records should have following options",
+            "name": "User clicks \"Status\" dropdown",
             "match": {
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.show_records_should_have_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_clicks_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 430000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should see the following dropdown options:",
+            "match": {
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "5"
+                  "ACTIVE"
                 ]
               },
               {
                 "cells": [
-                  "10"
-                ]
-              },
-              {
-                "cells": [
-                  "15"
-                ]
-              },
-              {
-                "cells": [
-                  "50"
-                ]
-              },
-              {
-                "cells": [
-                  "100"
-                ]
-              },
-              {
-                "cells": [
-                  "200"
-                ]
-              },
-              {
-                "cells": [
-                  "500"
+                  "INACTIVE"
                 ]
               }
             ],
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@TC05"
+            "name": "@TC10"
           }
         ]
       }
     ],
-    "name": "Show records functionality",
+    "name": "10. user status feature",
     "description": "",
-    "id": "show-records-functionality",
+    "id": "10.-user-status-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TC05.feature",
+    "uri": "file:src/test/resources/features/TC10.feature",
     "tags": [
       {
-        "name": "@TC05",
+        "name": "@TC10",
         "type": "Tag",
         "location": {
           "line": 1,
