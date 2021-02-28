@@ -62,8 +62,12 @@ public class LibraryPage extends LoginPage {
     @FindBy(xpath = "//div//ul//li[@class='nav-item'][2]")
     public WebElement userModule;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//tr[1]//th")
     public List<WebElement> moduleNames;
+
+
+    @FindBy(id = "book_categories")
+    public WebElement bookCategories;
 
 
     public void logOut() {

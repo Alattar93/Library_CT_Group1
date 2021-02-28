@@ -1,134 +1,184 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-28T06:51:05.816Z",
+        "start_timestamp": "2021-02-28T08:23:00.363Z",
         "line": 4,
-        "name": "verify user status",
+        "name": "As a students, I should be able to search books with different categories.",
         "description": "",
-        "id": "10.-user-status-feature;verify-user-status",
+        "id": "searching-books-with-different-categories;as-a-students--i-should-be-able-to-search-books-with-different-categories.",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4315000000,
+              "duration": 4744000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I am on the login page",
-            "match": {
-              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.i_am_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 455000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User login as a \"librarian\"",
+            "line": 5,
+            "name": "I login as \"student\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"librarian\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1273000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User is on \"Users\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Users\"",
+                  "val": "\"student\"",
                   "offset": 11
                 }
               ],
-              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.TC07_step_definitions.iLoginAs(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 423000000,
+              "duration": 1627000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User clicks \"Status\" dropdown",
+            "line": 6,
+            "name": "I should be able to go to \"Book Categories\" dropdown button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Status\"",
-                  "offset": 12
+                  "val": "\"Book Categories\"",
+                  "offset": 26
                 }
               ],
-              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_clicks_dropdown(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.TC07_step_definitions.iShouldBeAbleToGoToDropdownButton(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 327000000,
+              "duration": 581000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User should see the following dropdown options on \"Status\" dropDown:",
+            "line": 7,
+            "name": "I should see all types of the book categories below:",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Status\"",
-                  "offset": 50
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options_on_drop_down(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.libraryCT.step_definitions.TC07_step_definitions.i_should_see_all_types_of_the_book_categories_below(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "ACTIVE"
+                  "ALL"
                 ]
               },
               {
                 "cells": [
-                  "INACTIVE"
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Anthology"
+                ]
+              },
+              {
+                "cells": [
+                  "Classic"
+                ]
+              },
+              {
+                "cells": [
+                  "Comic and Graphic Novel"
+                ]
+              },
+              {
+                "cells": [
+                  "Crime and Detective"
+                ]
+              },
+              {
+                "cells": [
+                  "Drama"
+                ]
+              },
+              {
+                "cells": [
+                  "Fable"
+                ]
+              },
+              {
+                "cells": [
+                  "Fairy Tale"
+                ]
+              },
+              {
+                "cells": [
+                  "Fan-Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Fantasy"
+                ]
+              },
+              {
+                "cells": [
+                  "Historical Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Horror"
+                ]
+              },
+              {
+                "cells": [
+                  "Science Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Biography/Autobiography"
+                ]
+              },
+              {
+                "cells": [
+                  "Humor"
+                ]
+              },
+              {
+                "cells": [
+                  "Romance"
+                ]
+              },
+              {
+                "cells": [
+                  "Short Story"
+                ]
+              },
+              {
+                "cells": [
+                  "Essay"
+                ]
+              },
+              {
+                "cells": [
+                  "Memoir"
+                ]
+              },
+              {
+                "cells": [
+                  "Poetry"
                 ]
               }
             ],
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@TC10"
+            "name": "@TC07"
           }
         ]
       }
     ],
-    "name": "10. user status feature",
+    "name": "searching books with different categories",
     "description": "",
-    "id": "10.-user-status-feature",
+    "id": "searching-books-with-different-categories",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TC10.feature",
-    "tags": [
-      {
-        "name": "@TC10",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/TC07.feature",
+    "tags": []
   }
 ]
