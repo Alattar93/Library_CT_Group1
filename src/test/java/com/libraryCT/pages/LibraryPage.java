@@ -59,7 +59,23 @@ public class LibraryPage extends LoginPage {
     @FindBy(linkText = "Books")
     public WebElement booksPageLink;
 
+    @FindBy(xpath ="//div//ul//li[@class='nav-item'][2]" )
+    public WebElement userModule;
 
+    @FindBy(xpath =  "")
+    public List<WebElement> moduleNames;
+
+    public List<String> columnMethod(){
+        List<String> listOfElements = new ArrayList<>();
+
+        for (WebElement eachElements : moduleNames){
+            listOfElements.add(eachElements.getText());
+
+        }
+        return listOfElements;
+    }
+
+  //
 
 
     public void logOut() {

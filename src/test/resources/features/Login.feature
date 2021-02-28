@@ -8,5 +8,5 @@ Feature: Login to app
     Examples:
       | role      | page      |
       | student   | books     |
-      | librarian | Dashboard |
+      | librarian | dashboard |
 
