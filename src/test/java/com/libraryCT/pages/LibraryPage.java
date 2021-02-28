@@ -50,7 +50,7 @@ public class LibraryPage extends LoginPage {
     @FindBy(xpath = "//tbody//td//a")
     public List<WebElement> allEditUserButton;
 
-    @FindBy(xpath="//span[.='Users']")     // or linkText = "Users"
+    @FindBy(xpath = "//span[.='Users']")     // or linkText = "Users"
     public WebElement usersPageLink;
 
     @FindBy(linkText = "Dashboard")               // or //span[@class='title']
@@ -59,23 +59,11 @@ public class LibraryPage extends LoginPage {
     @FindBy(linkText = "Books")
     public WebElement booksPageLink;
 
-    @FindBy(xpath ="//div//ul//li[@class='nav-item'][2]" )
+    @FindBy(xpath = "//div//ul//li[@class='nav-item'][2]")
     public WebElement userModule;
 
-    @FindBy(xpath =  "")
+    @FindBy(xpath = "")
     public List<WebElement> moduleNames;
-
-    public List<String> columnMethod(){
-        List<String> listOfElements = new ArrayList<>();
-
-        for (WebElement eachElements : moduleNames){
-            listOfElements.add(eachElements.getText());
-
-        }
-        return listOfElements;
-    }
-
-  //
 
 
     public void logOut() {
