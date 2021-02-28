@@ -18,7 +18,7 @@ public class TC07_step_definitions {
 
     @When("I login as {string}")
     public void iLoginAs(String student) {
-        System.out.println("Step 1");
+       
 
         libraryPage.login(student);
 
@@ -27,7 +27,7 @@ public class TC07_step_definitions {
 
     @Then("I should be able to go to {string} dropdown button")
     public void iShouldBeAbleToGoToDropdownButton(String bookCategories) {
-        System.out.println("Step 2: I should be able to go to " + bookCategories + " dropdown button");
+     
 
 
         select = new Select(libraryPage.bookCategories);
@@ -36,7 +36,7 @@ public class TC07_step_definitions {
 
     @Then("I should see all types of the book categories below:")
     public void i_should_see_all_types_of_the_book_categories_below(List<String> expectedBooksList) {
-        System.out.println("Step 3: I should see all types of the book categories below:" + expectedBooksList);
+       
 
 
         List<WebElement> list = select.getOptions();
