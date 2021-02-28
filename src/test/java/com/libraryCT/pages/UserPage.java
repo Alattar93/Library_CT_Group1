@@ -6,5 +6,12 @@ import org.openqa.selenium.support.FindBy;
 public class UserPage extends LoginPage {
 
     @FindBy(name="tbl_users_length")
-    public WebElement showRecordsDropDown;
+    public WebElement showDropDown;
+
+    @FindBy(id="user_groups")
+    public WebElement userGroupDropdown;
+
+
+    @FindBy(id="user_status")
+    public WebElement statusDropdown;
 }

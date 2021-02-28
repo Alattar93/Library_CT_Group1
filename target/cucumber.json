@@ -3,83 +3,194 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-25T22:02:38.120Z",
         "line": 4,
-        "name": "Verify default values in users page",
+        "name": "User is already on Library login page",
         "description": "",
-        "id": "show-records-functionality;verify-default-values-in-users-page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3326000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.TC3_SeeModulesDefinitions.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T00:47:59.046Z",
+        "line": 7,
+        "name": "verify that the default record is 10",
+        "description": "",
+        "id": "5.-as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-that-the-default-record-is-10",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4025000000,
+              "duration": 278000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I am on the login page",
+            "line": 8,
+            "name": "User login as a \"librarian\"",
             "match": {
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_am_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1704000000,
+              "duration": 1937000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I login as librarian",
-            "match": {
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_login_as_librarian()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1668000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click \"users\" link",
+            "line": 9,
+            "name": "User is on \"Users\" module",
             "match": {
               "arguments": [
                 {
-                  "val": "\"users\"",
-                  "offset": 8
+                  "val": "\"Users\"",
+                  "offset": 11
                 }
               ],
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.i_click_link(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 420000000,
+              "duration": 1098000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "show records default value should be 10",
+            "line": 10,
+            "name": "Default records dropdown value is \"10\"",
             "match": {
               "arguments": [
                 {
-                  "val": "10",
-                  "offset": 37
+                  "val": "\"10\"",
+                  "offset": 34
                 }
               ],
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.show_records_default_value_should_be(java.lang.Integer)"
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.default_records_dropdown_value_is(java.lang.String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User is already on Library login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3220000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.TC3_SeeModulesDefinitions.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T00:48:05.760Z",
+        "line": 12,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "5.-as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 292000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 403000000,
+              "duration": 1559000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "show records should have following options",
+            "line": 14,
+            "name": "User is on \"Users\" module",
             "match": {
-              "location": "com.libraryCT.step_definitions.ShowRecords_StepDefinitions_TC05.show_records_should_have_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks \"Show\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Show\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_clicks_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1383000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the following dropdown options on \"Show\" dropDown:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Show\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options_on_drop_down(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
@@ -118,7 +229,7 @@
                 ]
               }
             ],
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -128,14 +239,146 @@
         ]
       }
     ],
-    "name": "Show records functionality",
+    "name": "5. As a librarian, I should be able to see book records on user page",
     "description": "",
-    "id": "show-records-functionality",
+    "id": "5.-as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/TC05.feature",
     "tags": [
       {
         "name": "@TC05",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-28T00:48:12.226Z",
+        "line": 4,
+        "name": "verify user status",
+        "description": "",
+        "id": "10.-user-status-feature;verify-user-status",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4676000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1662000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on \"Users\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks \"Status\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_clicks_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 858000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should see the following dropdown options on \"Status\" dropDown:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options_on_drop_down(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ACTIVE"
+                ]
+              },
+              {
+                "cells": [
+                  "INACTIVE"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC10"
+          }
+        ]
+      }
+    ],
+    "name": "10. user status feature",
+    "description": "",
+    "id": "10.-user-status-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC10.feature",
+    "tags": [
+      {
+        "name": "@TC10",
         "type": "Tag",
         "location": {
           "line": 1,
