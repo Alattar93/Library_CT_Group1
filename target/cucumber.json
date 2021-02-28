@@ -3,7 +3,263 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-27T18:04:36.152Z",
+        "line": 4,
+        "name": "User is already on Library login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3326000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.TC3_SeeModulesDefinitions.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T00:47:59.046Z",
+        "line": 7,
+        "name": "verify that the default record is 10",
+        "description": "",
+        "id": "5.-as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-that-the-default-record-is-10",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1937000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on \"Users\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1098000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Default records dropdown value is \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.default_records_dropdown_value_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User is already on Library login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3220000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.TC3_SeeModulesDefinitions.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T00:48:05.760Z",
+        "line": 12,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "5.-as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 292000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_login_as_a(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1559000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on \"Users\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_is_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks \"Show\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Show\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_clicks_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1383000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the following dropdown options on \"Show\" dropDown:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Show\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options_on_drop_down(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "15"
+                ]
+              },
+              {
+                "cells": [
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "500"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC05"
+          }
+        ]
+      }
+    ],
+    "name": "5. As a librarian, I should be able to see book records on user page",
+    "description": "",
+    "id": "5.-as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC05.feature",
+    "tags": [
+      {
+        "name": "@TC05",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-28T00:48:12.226Z",
         "line": 4,
         "name": "verify user status",
         "description": "",
@@ -13,7 +269,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4672000000,
+              "duration": 4676000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +281,7 @@
           },
           {
             "result": {
-              "duration": 625000000,
+              "duration": 278000000,
               "status": "passed"
             },
             "line": 7,
@@ -43,7 +299,7 @@
           },
           {
             "result": {
-              "duration": 1793000000,
+              "duration": 1662000000,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +317,7 @@
           },
           {
             "result": {
-              "duration": 700000000,
+              "duration": 243000000,
               "status": "passed"
             },
             "line": 9,
@@ -79,13 +335,19 @@
           },
           {
             "result": {
-              "duration": 430000000,
+              "duration": 858000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "User should see the following dropdown options:",
+            "name": "User should see the following dropdown options on \"Status\" dropDown:",
             "match": {
-              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options(java.util.List\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.Step_Definitions_TC05_TC10.user_should_see_the_following_dropdown_options_on_drop_down(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {

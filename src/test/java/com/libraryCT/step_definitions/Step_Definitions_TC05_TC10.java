@@ -78,26 +78,14 @@ public class Step_Definitions_TC05_TC10 {
 
     @Then("show records default value should be {int}")
     public void show_records_default_value_should_be(Integer expected) {
-        select = new Select(userPage.showRecordsDropDown);
+        select = new Select(userPage.showDropDown);
         // System.out.println(select.getFirstSelectedOption().getText());
         String actual = select.getFirstSelectedOption().getText();
         Assert.assertEquals(actual,String.valueOf(expected));    //first way convert int to string
 
     }
 
-    @Then("show records should have following options")
-    public void show_records_should_have_following_options(List<String> options) {
-        select = new Select(userPage.showRecordsDropDown);
 
-        List<WebElement> webElements = select.getOptions();
-
-        List<String> actualText = BrowserUtils.getElementsText(webElements);
-
-        Assert.assertEquals(options,actualText);
-
-        System.out.println("options = " + options);
-        System.out.println("actualText = " + actualText);
-    }
 
     @When("User clicks {string} dropdown")
     public void user_clicks_dropdown(String dropDown) {
@@ -115,17 +103,52 @@ public class Step_Definitions_TC05_TC10 {
     }
 
     @Then("User should see the following dropdown options:")
-    public void user_should_see_the_following_dropdown_options(List<String> expectedDropdownOptions) {
 
-        select = new Select(userPage.statusDropdown);
+
+    @Then("User should see the following dropdown options on {string} dropDown:")
+    public void user_should_see_the_following_dropdown_options_on_drop_down(String dropDown,List<String> expectedDropdownOptions) {
+        switch (dropDown) {
+
+            case "User Group":
+                select = new Select(userPage.userGroupDropdown);
+
+                break;
+            case "Status":
+                select = new Select(userPage.statusDropdown);
+
+                break;
+
+            case "Show":
+                select = new Select(userPage.showDropDown);
+
+        }
+
+
+
         List<WebElement> actualWebElements = select.getOptions();
 
-//        BrowserUtils.waitForVisibility(users_module_page.statusDropdown,10);
+
         List<String> actualDropDownOptions = BrowserUtils.getElementsText(actualWebElements);
 
         System.out.println("expectedDropdownOptions = " + expectedDropdownOptions);
         System.out.println("actualDropDownOptions = " + actualDropDownOptions);
-        Assert.assertEquals("DropDown options are different",expectedDropdownOptions,actualDropDownOptions);
+        Assert.assertEquals("DropDown options are different", expectedDropdownOptions, actualDropDownOptions);
+
+        Driver.closeDriver();
+    }
+
+
+    @Then("Default records dropdown value is {string}")
+    public void default_records_dropdown_value_is(String expectedRecordsNum) {
+        select = new Select(userPage.showDropDown);
+
+        String actualRecordsNum = select.getFirstSelectedOption().getText();
+        Assert.assertEquals(actualRecordsNum, expectedRecordsNum);
+
+        System.out.println("expectedRecordsNum = " + expectedRecordsNum);
+        System.out.println("actualRecordsNum = " + actualRecordsNum);
+
+        Driver.closeDriver();
 
     }
 
