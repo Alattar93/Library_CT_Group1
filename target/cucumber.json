@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-28T08:23:00.363Z",
+        "start_timestamp": "2021-03-01T05:43:55.324Z",
         "line": 4,
         "name": "As a students, I should be able to search books with different categories.",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4744000000,
+              "duration": 5146000000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1627000000,
+              "duration": 1914000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 581000000,
+              "duration": 413000000,
               "status": "passed"
             },
             "line": 7,

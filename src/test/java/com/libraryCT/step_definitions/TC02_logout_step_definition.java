@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class Logout_step_definition {
+public class TC02_logout_step_definition {
     LoginPage log = new LoginPage();
 
     @Given("user is on the home page")

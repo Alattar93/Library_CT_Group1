@@ -5,7 +5,7 @@ import com.libraryCT.utilites.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class Login_step_definitions {
+public class TC01_Login_step_definitions {
 
    LoginPage loginPage=new LoginPage();
 
