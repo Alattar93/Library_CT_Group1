@@ -11,7 +11,7 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class TC3_SeeModulesDefinitions {
+public class TC03_SeeModulesDefinitions {
 
    LoginPage loginPage=new LoginPage();
 LibraryPage libraryPage=new LibraryPage();
