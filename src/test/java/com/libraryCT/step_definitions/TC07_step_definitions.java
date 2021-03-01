@@ -44,6 +44,7 @@ public class TC07_step_definitions {
 
 
         Assert.assertEquals("Books Categories are NOT matched with expected names", expectedBooksList, actual);
+         Driver.closeDriver();
     }
 
 
